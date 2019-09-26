@@ -5,7 +5,7 @@ import { Layout, Menu, Avatar, Divider, Row, Col, Icon } from 'antd';
 import { withRouter } from 'react-router-dom';
 import SocialButton from 'Elements/SocialButton';
 import styles from './index.module.scss';
-import avatarImage from 'Assets/images/images.png';
+import avatarImage from 'Assets/images/vue.png';
 
 const MenuItem = Menu.Item;
 const { Sider } = Layout;
