@@ -1,0 +1,25 @@
+.parent {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.parent .inlineDiv {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent .inlineDiv .errorCode {
+  font-weight: bold;
+  font-size: 250px;
+  line-height: 180px;
+  color: yellowgreen;
+}
+.parent .inlineDiv .errorMessage {
+  font-size: 38px;
+}
+.parent .inlineDiv .backToHome {
+  float: right;
+  font-size: 20px;
+}

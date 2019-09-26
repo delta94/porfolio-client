@@ -1,0 +1,63 @@
+.hireMe {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 40px 0 50px 0;
+    .hireMeCont {
+        width: 55%;
+        margin: auto;
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .text  {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .btnCont {
+            .hireBtn {
+                height: 43px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-weight: bold;
+                background-color: yellowgreen;
+                border-color: transparent;  
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.projectsList {
+    padding: 35px 70px 100px 70px;
+    .projectsRow {
+        margin-top: 30px;
+        .projectItem {
+            :global(.ant-spin-text) {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(0, 21, 41);
+            }
+        }
+    }
+}
+
+.loading {
+    text-align: center;
+    height: calc(100vh - 249px);
+    .inlineDiv {
+        background: white;
+        padding: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        :global(.ant-spin-text) {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(0, 21, 41);
+        }
+    }
+}

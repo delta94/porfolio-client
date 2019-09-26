@@ -1,0 +1,11 @@
+.button {
+  color: #001529;
+  background-color: white;
+  border-color: transparent;
+  padding-top: 5px;
+}
+.button:hover {
+  opacity: 0.6;
+  color: #001529;
+  border-color: transparent;
+}

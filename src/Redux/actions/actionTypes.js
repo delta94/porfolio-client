@@ -1,0 +1,12 @@
+export const FetchSkills = 'FetchSkills';
+export const FetchFeatureProjects = 'FetchFeatureProjects';
+export const FetchLastBlogs = 'FetchLastBlogs';
+export const SaveLoading = 'SaveLoading';
+export const SaveError = 'SaveError';
+export const SaveSkills = 'SaveSkills';
+export const SaveFeatureProjects = 'SaveFeatureProjects';
+export const FetchFriends = 'FetchFriends';
+export const SaveFriends = 'SaveFriends';
+export const AboutPageErrorTrigger = 'AboutPageErrorTrigger';
+export const FetchProjects = 'FetchProjects';
+export const SaveProjects = 'SaveProjects';

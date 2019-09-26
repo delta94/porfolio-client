@@ -1,0 +1,144 @@
+.information {
+    background-color: #fafafa;
+    padding: 60px;
+    .text {
+        padding: 0;
+        padding-right: 50px;
+        .name {
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 55px;
+        }
+        .job {
+            font-size: 25px;
+            color: gray;
+        }
+        .description {
+            margin-top: 5px;
+            span {
+                color: yellowgreen;
+            }
+        }
+        .btns {
+            .porBtn, .resumeBtn {
+                height: 43px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-weight: bold;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .porBtn {
+                background-color: yellowgreen;
+                border-color: transparent;     
+            }
+            .resumeBtn {
+                background-color: rgb(0, 21, 41);
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+.whatIDo, .friends, .lastedProjects {
+    padding: 25px 60px;
+    .title {
+        height: 42px;
+        line-height: 50px;
+        font-size: 25px;
+        font-weight: 700;
+        padding-left: 24px;
+        position: relative;
+        margin-bottom: 13px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 5px;
+            height: 100%;
+            background: rgb(0, 21, 41);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    .text {
+        line-height: 24px;
+        a {
+            color: yellowgreen;
+        }
+    }
+}
+
+.whatIDo {
+    .skills {
+        margin-top: 15px;
+        .skillsRow {
+            margin-top: 20px;
+            .skillItem {
+                height: 150px;
+                .name {
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                .description {
+                    font-size: 15px;
+                }
+                :global(.ant-spin-text) {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgb(0, 21, 41);
+                }
+            }
+        }
+    }
+}
+
+.friends {
+    .friendsList {
+        margin-top: 40px;
+        :global {
+            .ant-carousel {
+                .slick-dots-bottom {
+                    bottom: -12px;
+                }
+                .slick-dots {
+                    li {
+                        button {
+                            background: rgb(0, 21, 41),
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+.lastedProjects {
+    .projectsRow {
+        margin-top: 40px;
+        .projectItem {
+            :global(.ant-spin-text) {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(0, 21, 41);
+            }
+        }
+    }
+    .btnRedirect {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+        .redirect {
+            height: 43px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: bold;
+            background-color: rgb(0, 21, 41);
+            border-color: transparent;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

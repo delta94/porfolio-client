@@ -1,0 +1,6 @@
+.icons i {
+  padding-left: 3px;
+}
+.icons i:first-child {
+  padding-left: 0;
+}

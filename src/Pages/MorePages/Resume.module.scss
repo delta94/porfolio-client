@@ -1,0 +1,76 @@
+.myresume {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 40px 0 50px 0;
+    .myresumeCont {
+        width: 55%;
+        margin: auto;
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .btnCont {
+            .resumeBtn {
+                height: 43px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-weight: bold;
+                background-color: yellowgreen;
+                border-color: transparent;  
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.mainResume {
+    .resumeCont {
+        width: 100%;
+        padding: 100px 0 120px 0;
+        .page {
+            canvas {
+                margin: auto;
+                width: 1000px !important;
+                height: auto !important;
+                box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+                border: 1px solid rgba(0,0,0,0.025);
+            }
+        }
+    }
+}
+
+.loading, .failed {
+    height: calc(100vh - 391px);
+    .inlineDiv {
+        background: white;
+        padding: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.loading {
+    .inlineDiv {
+        :global(.ant-spin-text) {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(0, 21, 41);
+        }
+    }
+}
+
+.failed {
+    .inlineDiv {
+        p {
+            color: rgb(0, 21, 41);
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+}

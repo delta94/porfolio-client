@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import configureStore from 'Redux/store';
+import { Layout } from 'antd';
+import LayoutWithScrollbar from 'Components/Layout';
+import Footer from 'Components/Footer';
+import Header from 'Components/Header';
+import Sider from 'Components/Sider'
+import RouteConfigs from 'Configs/route.config';
+import { toRoute } from 'Utils/route';
+import styles from './App.module.css';
+
+const { Content } = Layout;
+const store = configureStore();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <div className={styles.main}>
+          <Layout>
+            <Sider />
+            <LayoutWithScrollbar>
+              <Header />
+              <Content style={{ backgroundColor: 'white' }}>
+                <Switch>
+                  {RouteConfigs.map(route => toRoute(route))}
+                </Switch>
+              </Content>
+              <Footer />
+            </LayoutWithScrollbar>
+          </Layout>
+        </div>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

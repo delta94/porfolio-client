@@ -1,0 +1,13 @@
+$color: rgb(0, 21, 41);
+
+.button {
+    color: $color;
+    background-color: white;
+    border-color: transparent;
+    padding-top: 5px;
+    &:hover {
+        opacity: 0.6;
+        color: $color;
+        border-color: transparent;
+    }
+}

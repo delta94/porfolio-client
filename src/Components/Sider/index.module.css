@@ -1,0 +1,44 @@
+.sider {
+  height: 100vh;
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  max-width: 270px !important;
+  width: 270px !important;
+  padding: 25px 15px 15px 15px;
+  color: white;
+  text-align: center;
+}
+.sider .avatarCont .name {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.sider .avatarCont .avatar {
+  padding: 15px;
+}
+.sider .avatarCont .description {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.sider .menu {
+  text-align: left;
+}
+.sider .menu :global .ant-menu-item-selected {
+  font-weight: bold;
+}
+.sider .menu :global .ant-menu-item-selected span,
+.sider .menu :global .ant-menu-item-selected i {
+  color: yellowgreen;
+}
+.sider .menu :global .ant-menu-item,
+.sider .menu :global .ant-menu-submenu-title {
+  font-size: 16px;
+  background-color: transparent;
+}
+.sider .menu :global .ant-menu-sub {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}

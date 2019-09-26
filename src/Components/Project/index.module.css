@@ -1,0 +1,33 @@
+.project {
+  height: 200px;
+  border-radius: 4px;
+}
+.project .content {
+  height: 200px;
+}
+.project .content .avatar {
+  height: 200px;
+  overflow: hidden;
+}
+.project .content .avatar img {
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.project .content .info {
+  padding: 25px;
+}
+.project .content .info .name {
+  font-size: 25px;
+  font-weight: bold;
+  color: yellowgreen;
+}
+.project .content .info .description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 6px;
+}
+.project .content .info .note {
+  font-size: 14px;
+  color: lightblue;
+}

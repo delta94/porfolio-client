@@ -1,0 +1,47 @@
+.sider {
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    max-width: 270px !important;
+    width: 270px !important;
+    padding: 25px 15px 15px 15px;
+    color: white;
+    text-align: center;
+    .avatarCont {
+        .name {
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .avatar {
+            padding: 15px;
+        }
+        .description {
+            padding: 10px;
+            margin-bottom: 10px;
+        }  
+    }
+    .menu {
+        text-align: left;
+        :global {
+            .ant-menu-item-selected {
+                font-weight: bold;
+                span, i {
+                    color: yellowgreen;
+                }
+                
+            }
+            .ant-menu-item, .ant-menu-submenu-title {
+                font-size: 16px;
+                background-color: transparent;
+            }
+            .ant-menu-sub {
+                background-color: transparent;
+                box-shadow: none;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}

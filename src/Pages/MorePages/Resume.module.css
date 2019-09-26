@@ -1,0 +1,60 @@
+.myresume {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 40px 0 50px 0;
+}
+.myresume .myresumeCont {
+  width: 55%;
+  margin: auto;
+}
+.myresume .myresumeCont .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.myresume .myresumeCont .btnCont .resumeBtn {
+  height: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  background-color: yellowgreen;
+  border-color: transparent;
+}
+.myresume .myresumeCont .btnCont .resumeBtn:hover {
+  opacity: 0.8;
+}
+.mainResume .resumeCont {
+  width: 100%;
+  padding: 100px 0 120px 0;
+}
+.mainResume .resumeCont .page canvas {
+  margin: auto;
+  width: 1000px !important;
+  height: auto !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+}
+.loading,
+.failed {
+  height: calc(100vh - 391px);
+}
+.loading .inlineDiv,
+.failed .inlineDiv {
+  background: white;
+  padding: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.loading .inlineDiv :global(.ant-spin-text) {
+  font-size: 16px;
+  font-weight: 400;
+  color: #001529;
+}
+.failed .inlineDiv p {
+  color: #001529;
+  font-size: 16px;
+  margin-top: 20px;
+}

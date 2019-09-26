@@ -1,0 +1,134 @@
+.information {
+  background-color: #fafafa;
+  padding: 60px;
+}
+.information .text {
+  padding: 0;
+  padding-right: 50px;
+}
+.information .text .name {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 55px;
+}
+.information .text .job {
+  font-size: 25px;
+  color: gray;
+}
+.information .text .description {
+  margin-top: 5px;
+}
+.information .text .description span {
+  color: yellowgreen;
+}
+.information .text .btns .porBtn,
+.information .text .btns .resumeBtn {
+  height: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.information .text .btns .porBtn:hover,
+.information .text .btns .resumeBtn:hover {
+  opacity: 0.8;
+}
+.information .text .btns .porBtn {
+  background-color: yellowgreen;
+  border-color: transparent;
+}
+.information .text .btns .resumeBtn {
+  background-color: #001529;
+  border-color: transparent;
+}
+.whatIDo,
+.friends,
+.lastedProjects {
+  padding: 25px 60px;
+}
+.whatIDo .title,
+.friends .title,
+.lastedProjects .title {
+  height: 42px;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 13px;
+}
+.whatIDo .title::before,
+.friends .title::before,
+.lastedProjects .title::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #001529;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.whatIDo .text,
+.friends .text,
+.lastedProjects .text {
+  line-height: 24px;
+}
+.whatIDo .text a,
+.friends .text a,
+.lastedProjects .text a {
+  color: yellowgreen;
+}
+.whatIDo .skills {
+  margin-top: 15px;
+}
+.whatIDo .skills .skillsRow {
+  margin-top: 20px;
+}
+.whatIDo .skills .skillsRow .skillItem {
+  height: 150px;
+}
+.whatIDo .skills .skillsRow .skillItem .name {
+  font-size: 17px;
+  font-weight: bold;
+}
+.whatIDo .skills .skillsRow .skillItem .description {
+  font-size: 15px;
+}
+.whatIDo .skills .skillsRow .skillItem :global(.ant-spin-text) {
+  font-size: 16px;
+  font-weight: 400;
+  color: #001529;
+}
+.friends .friendsList {
+  margin-top: 40px;
+}
+.friends .friendsList :global .ant-carousel .slick-dots-bottom {
+  bottom: -12px;
+}
+.friends .friendsList :global .ant-carousel .slick-dots li button {
+  background: #001529;
+}
+.lastedProjects .projectsRow {
+  margin-top: 40px;
+}
+.lastedProjects .projectsRow .projectItem :global(.ant-spin-text) {
+  font-size: 16px;
+  font-weight: 400;
+  color: #001529;
+}
+.lastedProjects .btnRedirect {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.lastedProjects .btnRedirect .redirect {
+  height: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  background-color: #001529;
+  border-color: transparent;
+}
+.lastedProjects .btnRedirect .redirect:hover {
+  opacity: 0.8;
+}
