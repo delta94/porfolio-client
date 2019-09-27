@@ -1,0 +1,33 @@
+.slogan {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 40px 0 50px 0;
+}
+.slogan .sloganCont {
+  width: 55%;
+  margin: auto;
+}
+.slogan .sloganCont .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.slogan .sloganCont .text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.slogan .sloganCont .text span {
+  color: yellowgreen;
+}
+.slogan .sloganCont .follow .text {
+  font-size: 16px;
+}
+.slogan .sloganCont .follow .linkCont {
+  margin-top: 15px;
+  width: 30%;
+  margin: auto;
+}
+.slogan .sloganCont .follow .linkCont .links i {
+  color: yellowgreen;
+  font-size: 20px;
+}
