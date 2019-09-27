@@ -31,3 +31,43 @@
   color: yellowgreen;
   font-size: 20px;
 }
+.contactForm {
+  padding: 75px 0;
+  width: 50%;
+  margin: auto;
+}
+.contactForm .title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contactForm .mainForm .name,
+.contactForm .mainForm .email,
+.contactForm .mainForm .message {
+  margin-bottom: 10px;
+}
+.contactForm .mainForm .name input,
+.contactForm .mainForm .name textarea,
+.contactForm .mainForm .email input,
+.contactForm .mainForm .email textarea,
+.contactForm .mainForm .message input,
+.contactForm .mainForm .message textarea {
+  font-size: 16px;
+}
+.contactForm .mainForm .topic {
+  margin-bottom: 15px;
+}
+.contactForm .mainForm .topic :global(.ant-select) {
+  font-size: 16px;
+}
+.contactForm .mainForm .submit .submitBtn {
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+  background-color: yellowgreen;
+  border-color: transparent;
+}
+.contactForm .mainForm .submit .submitBtn:hover {
+  opacity: 0.8;
+}
