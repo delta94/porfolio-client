@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Form, Input, Select, Icon, Button } from 'antd';
+import { Row, Col, Form, Input, Select, Icon, Button, message } from 'antd';
 import styles from './Contact.module.scss';
 
 const { Option } = Select;
@@ -39,13 +39,9 @@ class Contact extends React.PureComponent {
         const errors = form.getFieldsError();
         const errorFields = Object.keys(errors).filter(key => errors[key] !== undefined);
         const normalFields = ['name', 'email', 'message'].filter(field => errorFields.indexOf(field) === -1);
-        console.log(errorFields);
-        console.log(normalFields);
         let flag = false;
         for (let i = 0; i < normalFields.length; ++i) {
             const field = normalFields[i];
-            console.log(field);
-            console.log(form.getFieldValue(field));
             if (!form.getFieldValue(field) || form.getFieldValue(field).trim() === '')
             {
                 flag = true;
@@ -58,7 +54,8 @@ class Contact extends React.PureComponent {
             }
         }
         if (!flag && errorFields.length === 0) {
-            console.log('success');
+            form.resetFields();
+            message.success('Your feedback has been sent');
         }
     };
 

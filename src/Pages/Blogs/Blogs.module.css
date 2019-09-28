@@ -1,0 +1,59 @@
+.subscribe {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 40px 0 50px 0;
+}
+.subscribe .subscribeCont {
+  width: 55%;
+  margin: auto;
+}
+.subscribe .subscribeCont .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.subscribe .subscribeCont .text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.subscribe .subscribeCont .subscribeBtn {
+  width: 60%;
+  margin: auto;
+}
+.subscribe .subscribeCont .subscribeBtn input:hover {
+  border-color: yellowgreen;
+}
+.subscribe .subscribeCont .subscribeBtn input:focus {
+  border-color: yellowgreen;
+}
+.subscribe .subscribeCont .subscribeBtn button {
+  font-weight: bold;
+  background-color: yellowgreen;
+  border-color: transparent;
+}
+.subscribe .subscribeCont .subscribeBtn button:hover {
+  opacity: 0.8;
+}
+.blogsList {
+  padding: 35px 70px 100px 70px;
+}
+.blogsList .blogsRow {
+  margin-top: 20px;
+}
+.loading {
+  text-align: center;
+  height: calc(100vh - 222px);
+}
+.loading .inlineDiv {
+  background: white;
+  padding: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading .inlineDiv :global(.ant-spin-text) {
+  font-size: 16px;
+  font-weight: 400;
+  color: #001529;
+}

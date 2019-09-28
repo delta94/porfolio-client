@@ -10,3 +10,5 @@ export const SaveFriends = 'SaveFriends';
 export const AboutPageErrorTrigger = 'AboutPageErrorTrigger';
 export const FetchProjects = 'FetchProjects';
 export const SaveProjects = 'SaveProjects';
+export const FetchBlogs = 'FetchBlogs';
+export const SaveBlogs = 'SaveBlogs';

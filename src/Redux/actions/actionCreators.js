@@ -55,8 +55,13 @@ export const saveProjects = projects => ({
 });
 
 //Blog
-export const fetchLastBlogs = () => ({
-    type: ActionTypes.FetchLastBlogs,
+export const fetchBlogs = () => ({
+    type: ActionTypes.FetchBlogs,
+});
+
+export const saveBlogs = blogs => ({
+    type: ActionTypes.SaveBlogs,
+    payload: blogs,
 });
 
 //error

@@ -2,7 +2,6 @@ import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
 import { Row, Col, Button, Spin, Icon } from 'antd';
-import Slide from 'react-reveal/Slide';
 import { Link, Redirect, withRouter } from 'react-router-dom';
 import * as ActionCreators from 'Redux/actions/actionCreators';
 import Project from 'Components/Project';
@@ -50,7 +49,7 @@ class Projects extends React.PureComponent {
                             <Row key={i} className={styles.projectsRow} gutter={48}>
                                 {projectsRow.map((project, j) => (
                                     <Col key={`${i}_${j}`} className={styles.projectItem} span={12}>
-                                        <Link to={`/project/${project.id}`}><Slide top><Project project={project} /></Slide></Link>
+                                        <Link to={`/project/${project.id}`}><Project project={project} /></Link>
                                     </Col>
                                 ))}
                             </Row>
