@@ -10,6 +10,10 @@ import styles from './Blogs.module.scss';
 const { Search } = Input;
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 class Blogs extends React.PureComponent {
+    state = {
+        email: '',
+    }
+
     componentDidMount() {
         const { fetchBlogs } = this.props;
         fetchBlogs();
@@ -23,8 +27,12 @@ class Blogs extends React.PureComponent {
     handleSubscribeEmail = email => {
         if (!email || email.trim() === '' || !emailRegex.test(email))
             message.error('Your email is invalid!');
-        else 
+        else {
             message.success('You have subscribed successfully!');
+            this.setState({
+                email: ''
+            });
+        }
     }
 
     render() {
@@ -45,6 +53,8 @@ class Blogs extends React.PureComponent {
                                 enterButton="Subscribe"
                                 size="large"
                                 onSearch={this.handleSubscribeEmail}
+                                value={this.state.email}
+                                onChange={e => this.setState({ email: e.target.value })}
                             />
                         </div>
                     </div>

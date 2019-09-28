@@ -33,7 +33,7 @@
 }
 .loading {
   text-align: center;
-  height: calc(100vh - 249px);
+  height: calc(100vh - 206px);
 }
 .loading .inlineDiv {
   background: white;
