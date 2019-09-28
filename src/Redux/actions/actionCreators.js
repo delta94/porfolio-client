@@ -64,6 +64,15 @@ export const saveBlogs = blogs => ({
     payload: blogs,
 });
 
+//quotation
+export const fetchQuotations = () => ({
+    type: ActionTypes.FetchQuotations
+});
+
+export const saveQuotations = quotations => ({
+    type: ActionTypes.SaveQuotations,
+    payload: quotations,
+});
 //error
 export const saveError = (errorType, errorCode) => ({
     type: ActionTypes.SaveError,

@@ -1,0 +1,54 @@
+.hireMe {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 40px 0 50px 0;
+    .hireMeCont {
+        width: 55%;
+        margin: auto;
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .text  {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.quotationsList {
+    padding: 100px;
+    :global {
+        .ant-list-item-meta-title {
+            font-size: 25px;
+            font-weight: 400;
+            font-family: 'Dancing Script', cursive;
+            color: rgb(0, 21, 41);
+        }
+        .ant-list-item-meta-description {
+            text-align: right;
+            color: yellowgreen;
+            font-size: 15px;
+            font-family: 'Kalam', cursive;
+        }
+    }
+}
+
+.loading {
+    text-align: center;
+    height: calc(100vh - 249px);
+    .inlineDiv {
+        background: white;
+        padding: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        :global(.ant-spin-text) {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(0, 21, 41);
+        }
+    }
+}
