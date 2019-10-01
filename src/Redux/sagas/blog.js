@@ -10,7 +10,7 @@ function* fetchBlogsWorker() {
         yield new Promise((resolve, reject) => {
             setTimeout(() => {
                 const a = Math.random();
-                if (a < 10.8) {
+                if (a > 10.8) {
                     resolve(true);
                 }
                 else {
